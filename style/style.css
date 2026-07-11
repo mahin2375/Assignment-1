@@ -1,0 +1,167 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f8f9fc;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    width:100%;
+    background:#ffffff;
+    border-bottom:1px solid #ececec;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:78px;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    background:#0d1b3d;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#3b82f6;
+    font-size:14px;
+    font-weight:700;
+}
+
+.logo-text{
+    line-height:1.1;
+}
+
+.logo-text h2{
+    font-size:14px;
+    font-weight:800;
+    color:#1f2937;
+}
+
+.logo-text span{
+    font-size:14px;
+    font-weight:700;
+    color:#1f2937;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:48px;
+}
+
+.navbar ul li a{
+
+    text-decoration:none;
+    color:#1f2937;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#2563eb;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn-primary{
+
+    text-decoration:none;
+    background:#2563eb;
+    color:#ffffff;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 20px rgba(37,99,235,.18);
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.container{
+
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+    gap:20px;
+}
+
+.navbar ul{
+
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:576px){
+
+.navbar ul{
+
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.btn-primary{
+
+    width:100%;
+    text-align:center;
+}
+
+}
